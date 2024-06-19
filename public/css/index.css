@@ -1,0 +1,235 @@
+header{
+    background: #e4af00;
+    height: 20px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+   
+}
+
+span{
+    font-size:20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -29.8rem;
+    margin-left: 9rem;
+
+}
+
+
+
+img {
+    scale: 1;
+    margin-left: 17rem;
+    margin-top: -10rem;
+}
+
+
+
+font-box {
+    background-color: #000000;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'LEMON MILK', sans-serif;
+   
+}
+
+
+nav{
+    background: #000000;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 10px;
+    padding: 30px;
+   
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;  
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    border-radius: 3px;
+    
+    
+}
+a.active, a:hover {
+    text-decoration: underline;
+    color: #87B8FA;
+    transition: text-decoration 3s, color 3s; 
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.container{
+    color: #000000;
+}
+
+.container .title {
+    font-size: 4.5rem;
+    color:#497fc6;
+   margin-top: 5rem;
+   margin-bottom: 0rem;
+   text-transform: uppercase;
+   text-align: center;
+   }
+
+.container .info {
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    color:#f0f0f0;
+    margin-top: -13rem;
+    font-weight: 300;
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+   margin-top: 2rem;
+   transform: scale(1.1);
+}
+
+.content button {
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #497fc6;
+    margin-top: 15rem;
+    margin-left: 70rem;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    scale: 0.9;
+}
+    
+
+@media(max-width: 1420px) {
+    .logo{
+        padding: 0 20px;
+        margin: 0.5em;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .3s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: rgb(232, 182, 19);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+        
+}
+section{
+    background-color: #000000;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 200px;
+}
+
+footer{
+    background-color: rgb(16, 16, 16);
+    background-size: cover;
+    height: 25vh;
+    width: 100%;
+    padding: 20px;
+
+}
+
+
+b.active,b:hover{
+    background: #000000;
+    transition: 3s;
+    width: 2rem;
+}
+b{
+    margin-left: 10.5rem;
+    color: white;
+    font-size: 15px;  
+    padding: 15px;
+    border-radius: 3px;
+    
+}
+
+h4 {
+    margin-top: 10rem;
+    margin-left: 37rem;
+    color: rgb(177, 177, 177);
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+      display: none !important;
+    }
+  }
+
+
+  @media only screen and (max-width: 400px) {
+
+.container {
+        padding-left: 10rem;
+    }
+    footer {
+      display: none !important;
+    }
+  }

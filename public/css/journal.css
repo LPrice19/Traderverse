@@ -1,0 +1,255 @@
+/* Header */
+header {
+    background: #e4af00;
+    height: 20px;
+    width: 100%;
+}
+
+span{
+    font-size:20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -29.8rem;
+    margin-left: 9rem;
+
+}
+h5{
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+ 
+}
+
+h3 {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: white;
+    outline: 2px;
+    outline-color: #5480b9;
+}
+
+h1 {
+    
+    margin-left: 49rem;
+    font-size: 0.8rem;
+    color: #291d00;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    background-color: #000000;
+}
+nav{
+    background: #000000;
+    height: 80px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    
+}
+
+.logo {
+    height: 100px;
+    padding: 0 8px;
+    margin: 0.5em 0;
+    margin-left: 5rem;
+    margin-top: -0.5rem;
+    transform: scale(2.5);
+    background-color: #000000;
+}
+nav ul{
+    float: right;
+    margin-right: 20px
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 10px;
+    padding: 30px;
+   
+}
+nav ul li a{
+    color: white;
+    font-size: 15px;  
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    padding: 15px;
+    border-radius: 3px;
+    
+    
+}
+a.active, a:hover {
+    text-decoration: underline;
+    color: #87B8FA;
+    transition: text-decoration 1s, color 1s; /* Apply the transition to text-decoration and color properties */
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.container1{
+    color: #000000;
+    margin-top: 2rem;
+}
+.container1 .title {
+        font-size: 3rem;
+       color:rgb(255, 255, 255);
+       margin-top: 10rem;
+       margin-bottom: 0rem;
+       text-transform: uppercase;
+       text-align: center;
+       }
+
+.container1 .title-2{
+    font-size:17px;
+    color:#c9c9c9;
+    margin-top: 0rem;
+    font-weight: 100;
+    margin-bottom: 10rem;
+    text-align: center;
+    
+}
+
+.container {
+   margin-top: 10rem;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #000000;
+ 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.question {
+    margin-bottom: 30px; /* Increase the margin-bottom to add more space */
+    color: aliceblue;
+    
+}
+
+.question label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form {
+    margin-top: -6rem;
+}
+
+.question textarea {
+    margin-top: 1rem;
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+p {
+    margin-top: 1rem;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 390px) {
+    .container1 .title {
+        margin-top: 10rem;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        
+        padding: 10px;
+    }
+
+    .question textarea {
+        margin-top: 0rem;
+        height: 150px;
+    }
+
+    .submit-btn {
+        margin-top: 10px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .3s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+   
+}
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/customization.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <title>"Light Mode JavaScript</title>
+    <script src="js/customization.js" defer></script>
+    <script src="js/api.js" defer></script>
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "hU_TbBz6XTU9AqSEDWrOx",
+            domain: "www.chatbase.co"
+        };
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="hU_TbBz6XTU9AqSEDWrOx" domain="www.chatbase.co" defer></script>
+</head>
+
+<body>
+
+    <header>  
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fas fa-bars"></i>
+            </label>
+            
+            <img src="Images/2.png" alt="ui logo" class="logo" >
+            
+            <ul>
+                <li><a href="Dashboard.html">Dashboard</a></li>
+                <li><a href="customization.html">Meditation</a></li>
+                <li><a href="journal.html">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        
+        <div class="container"> 
+            <h3 class="title">Meditation</h3>
+            <h3 class="title-2">Nourish the mind. Reap the rewards.</h3>
+           
+            <textarea placeholder="What's your ideal trading day?"></textarea>
+            <div class="row">
+                <select></select>
+                <button><img src="Images/play.png"></button>
+            </div>
+    
+            <div class="service-container">
+                <div class="product">
+                    <iframe class="video" width="500" height="278" src="https://www.youtube.com/embed/bB1rBcA07YA?si=8vqj2lk9FraHsF5i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+
+
+    <script>
+        let speech = new SpeechSynthesisUtterance();
+
+        let voices = [];
+
+        let voiceSelect = document.querySelector("select");
+
+        window.speechSynthesis.onvoiceschanged = () => {
+            voices = window.speechSynthesis.getVoices();
+            speech.voice = voices[0];
+
+            voices.forEach((voice, i) => (voiceSelect.options[i]) = new Option(voice.name, i));
+        };
+
+        voiceSelect.addEventListener("change", () => {
+            speech.voice = voices[voiceSelect.value];
+        })
+        
+        document.querySelector("button").addEventListener("click", () => {
+            speech.text = document.querySelector("textarea").value; 
+            window.speechSynthesis.speak(speech);
+        })
+
+       
+    </script>
+</body>
+</html>

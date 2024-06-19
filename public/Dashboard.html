@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/register.css">
+    <!-- Include your fontawesome and bootstrap-icons stylesheets here -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="js/customization.js" defer></script>
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "hU_TbBz6XTU9AqSEDWrOx",
+            domain: "www.chatbase.co"
+        };
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="hU_TbBz6XTU9AqSEDWrOx" domain="www.chatbase.co" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fas fa-bars"></i>
+            </label>
+            <img src="Images/2.png" alt="ui logo" class="logo">
+            <ul>
+                <li><a href="Dashboard.html">Dashboard</a></li>
+                <li><a href="breath.html">Meditation</a></li>
+                <li><a href="journal.html">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="welcome-message">
+            <h3>Welcome to the</h3>
+            <h4>Traderverse</h4>
+        </div>
+    </div>
+    
+
+     <!-- Economic News Section -->
+     <div class="economic-news-container">
+        <h2>Economic News</h2>
+        <ul class="economic-news" id="economic-news">
+            <!-- News items will be added here dynamically using JavaScript -->
+        </ul>
+    </div>
+
+    <!-- Rest of your dashboard content goes here -->
+
+     <!-- Our Mission Section -->
+     <div class="mission-section">
+        <img src="Images/2.png" alt="ui logo" class="logo1">
+        <h3>Our Mission</h3>
+        <p>Our mission at Traderverse is to allow strategic emotion regulation to allow a trader to be primed for the markets. Financial markets facilitate buying and selling of numerous assets such as currencies, bonds, stocks, cryptocurrency etc. The barrier to enter is minimal and hypothetically speaking, any adult can participate and make money. However, the ease of participating in the markets is met with individuals who want to make money fast, without any real understanding of the dynamic nature of the financial markets. Statistics show that 80% of traders experience losses and are not profitable, which equates to 1 in 4 (Ninja. 2019) and in addiction to this, it has been discovered that 80% of unprofitable traders quit within the first two years. 
+            For a brand-new trader entering the scene, they will attempt to learn technical and/or fundamental analysis. This is simply not enough to be successful in the markets as human psychology must be mastered. Seeing as you are your own boss, it takes a supreme amount of introspection and self-realisation to acquire the discipline and emotional intelligence to navigate the financial markets at a consistent level. Every day human psychology is invalidated when entering the charts. Dentists and doctors wouldn’t be in business if they had a 60% success rate. However, a trader can make a living and prosper with that level of success. 
+            </p>
+    </div>
+
+    <div class="roadmap">
+        <img src="Images/Flow1.png" alt="flow ui" class="flow">
+    </div>
+
+
+
+    <script>
+        // Fetching economic news from an API
+        fetch('https://eodhd.com/api/news?s=AAPL.US&offset=0&limit=10&api_token=demo&fmt=json')
+            .then(response => response.json())
+            .then(data => {
+                const newsContainer = document.getElementById('economic-news');
+                data.forEach(item => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.textContent = item.title; // Assuming your API response has a title for each news item
+                    li.appendChild(a);
+                    newsContainer.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Error fetching economic news:', error));
+    </script>
+
+    
+   
+</body>
+
+</html>

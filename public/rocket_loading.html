@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Loading Screen</title>
+    <link rel="stylesheet" href="css/rocket_loading.css">
+</head>
+<body>
+    <div class="rocket-container">
+        <div class="rocket">
+            <div class="body"></div>
+            <div class="flame"></div>
+        </div>
+        <p>Every battle is won or lost before it's ever fought.</p>
+        <p class="below">- Sun Tzu, strategist</p>
+    </div>
+    <script>
+        // Simulate loading with a delay
+        setTimeout(function() {
+            // Redirect to register.html after 3 seconds
+            window.location.href = 'Dashboard.html';
+        }, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+</body>
+</html>

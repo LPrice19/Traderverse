@@ -1,0 +1,436 @@
+header{
+    background: #e4af00;
+    height: 20px;
+    width: 100%;
+}
+span{
+    font-size:20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -29.8rem;
+    margin-left: 9rem;
+
+}
+h5{
+    text-align: center;
+    font-size: 0.8em;
+ 
+}
+
+h1 {
+    
+    margin-left: 49rem;
+    font-size: 0.8rem;
+    color: #291d00;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'LEMON MILK', sans-serif;
+    background-color: #000000;
+}
+nav{
+    background: #000000;
+    height: 80px;
+    width: 100%;
+    z-index: -1;
+}
+
+.logo {
+    height: 100px;
+    padding: 0 8px;
+    margin: 0.5em 0;
+    margin-left: 5rem;
+    margin-top: -0.5rem;
+    transform: scale(2.5);
+    background-color: #000000;
+    z-index: -1;
+}
+nav ul{
+    float: right;
+    margin-right: 20px
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 10px;
+    padding: 30px;
+   
+}
+nav ul li a{
+    color: white;
+    font-size: 15px;  
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    border-radius: 3px;
+    
+    
+}
+a.active, a:hover {
+    text-decoration: underline;
+    color: #87B8FA;
+}
+
+.form-container {
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    transition: border-bottom 0.3s ease;
+    color: #fff;
+    background-color: #000000;
+}
+
+.form-container input:focus {
+    border-bottom: 2px solid #497fc6;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-top: 10rem;
+    margin-left: 26rem;
+    color: white;
+}
+
+p:active {
+    color: white;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+
+.form-container button {
+    background-color: #0e0e0e;
+    color: #000000;
+    padding: 10px 20px;
+    border:#0b4388;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.form-container button:hover {
+    background-color: #0b4388;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.economic-news-container {
+    width: 570px;
+    padding: 20px;
+    margin-top: 10rem;
+    border: 2px solid #4588d0;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #6d6d6d;
+
+    /* Adjust margin-left to position it from the left */
+    margin-left: auto; /* Auto margin will push it to the right */
+    margin-right: 2rem; /* Add margin-right for spacing */
+}
+
+
+.economic-news {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.economic-news li {
+    margin-bottom: 10px;
+}
+
+.economic-news li a {
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+    font-size: 13px;
+}
+
+.economic-news li a:hover {
+    color: hsl(211, 71%, 59%);
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: calc(100vh - 80px); /* Adjust the height accounting for the height of the navigation bar */
+    float: left;
+    margin-left: 2rem;
+}
+
+.container .welcome-message {
+    max-width: 400px; /* Adjust the max-width as needed */
+    margin: 80px auto 20px; /* Center the container horizontally and add margin-top to lower it below the nav bar */
+    padding: 20px; /* Add padding as needed */
+    text-align: left; /* Align the text to the left */
+    
+}
+
+.welcome-message h3 {
+    font-size: 70px; /* Adjust the font size as needed */
+    color: #c0c0c0;
+    font-weight: bold;
+    margin: 0; /* Remove default margins */
+}
+
+.welcome-message h4 {
+    font-size: 80px; /* Adjust the font size as needed */
+    color: #5d9eff;
+    font-weight: bold;
+    margin: 0; /* Remove default margins */
+}
+
+.mission-section {
+    text-align: center; /* Center the text */
+    margin-top: -2rem; /* Add margin-top as needed */
+    color: #c4c4c4; /* Text color */
+    font-size: 50px; /* Adjust font size as needed */
+    font-weight: bold; /* Bold text */
+
+}
+
+.logo1 {
+    margin-bottom: -250px; /* Add margin-bottom to separate the logo from the text */
+    scale: 0.5;
+    margin-left: -28rem;
+}
+
+p {
+    width: 900px;
+    margin-top: 3rem;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 2; /* Adjust line height as needed */
+    margin-left: 17rem;
+    color: #d9d9d9;
+    }
+    
+
+    .roadmap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Adjust as needed */
+    }
+    
+    .flow {
+        max-width: 100%; /* Ensures image doesn't exceed container width */
+        max-height: 100%; /* Ensures image doesn't exceed container height */
+    }
+    
+
+
+@media (max-width:390px){
+    
+    .roadmap {
+        display: none;
+    }
+
+    .economic-news-container {
+        width: 320px;
+        scale: 0.0001;
+    }
+
+    .economic-news {
+        width: 300px;
+        color: white;
+    }
+
+
+    .logo1 {
+        margin-top: 10rem;
+        margin-left: -4rem;
+    }
+
+    .welcome-message h3, .welcome-message h4{
+        font-size: 30px;
+    }
+
+    .welcome-message, .logo1 {
+        margin-top: -300rem;
+    }
+
+    p {
+        width: 300px; /* Adjusted width */
+        margin: 0 auto; /* Center the paragraph horizontally */
+        text-align: center; /* Align text to center */
+        justify-content: center; /* Align content horizontally */
+        color: #d9d9d9; /* Text color */
+        margin-top: 3rem; /* Adjusted top margin */
+        font-size: 15px; /* Adjusted font size */
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+
+    .container .title {
+        font-size: 1.8rem;
+       color:rgb(255, 255, 255);
+       margin-top: 5rem;
+       margin-bottom: 0rem;
+       text-transform: uppercase;
+       text-align: center;
+       }
+     .container .service-container .product{
+        text-align: center;
+        padding:0.7rem 0rem;
+        background: #5480b9;
+        box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.1);
+        outline-offset: -1.5rem;
+        cursor: pointer;
+        margin-left: -10rem;
+        margin-top: -5rem;
+        width: 520px;
+        height: 300px;
+     }
+
+     .text {
+        font-size: 0.01rem;
+
+        .logo{
+            padding: 0 20px;
+            margin: 0.5em;
+        }
+        .checkbtn{
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #000000;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .3s;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+            padding: 10px 10px;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+       
+    }
+  
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .3s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+   
+     
+}
+section{
+    background-color: #000000;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 200px;
+}
+footer{
+    background-color: rgb(16, 16, 16);
+    background-size: cover;
+    height: 25vh;
+    width: 100%;
+    padding: 20px;
+
+}
+
+
+b.active,b:hover{
+    background: #000000;
+    transition: 3s;
+    width: 2rem;
+}
+b{
+    margin-left: 10.5rem;
+    color: white;
+    font-size: 15px;  
+    padding: 15px;
+    border-radius: 3px;
+    
+}
+
+h4 {
+    margin-top: 10rem;
+    margin-left: 37rem;
+    color: rgb(177, 177, 177);
+    font-size: 13px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    footer {
+      display: none !important;
+    }
+    .service-container {
+        margin-left: 4rem;
+    }
+  }
